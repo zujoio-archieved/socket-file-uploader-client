@@ -75,7 +75,7 @@ class UploadFile extends Component{
         } else{
             if(!this.state.allFiles) return null;
             this.setState({ pauseUpload: false, loaded: 100, totalRemainingFiles: null, resume: false, cancel: false});
-            //message.success('All Files Uploaded Successfully');
+            //All Files Uploaded Successfully
         }
     }
     handlePause = () =>{
@@ -104,7 +104,6 @@ class UploadFile extends Component{
                     <label className='input-text' style={{fontSize: 15
                                                     }} htmlFor="fileInput">
                         <span className="text">{this.state.fileInputText || 'Select Files'}</span>
-                        {/* <span>{ <CancelBtn  onClick={this.handleCancel} />}</span> */}
                     </label>    
                 
                     <span>{this.state.cancel && <CancelBtn onClick={this.handleCancel} />}</span>
