@@ -4,7 +4,7 @@ const ProgressBar = ({ percent }) => {
     
     return(
         <>
-          <div style={{ display: 'flex', justifyContent:'space-between', alignItems: 'center'}} > 
+          <div style={{ display: 'flex', justifyContent:'space-between', alignItems: 'center', marginTop: 16}} > 
             <div style={{width: '100%', marginRight: 8}}> 
                 <div id="myProgress" style={{ backgroundColor: '#f5f5f5', borderRadius: 50 }}>
                     <div id="myBar"

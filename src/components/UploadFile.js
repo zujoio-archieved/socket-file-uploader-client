@@ -99,7 +99,7 @@ class UploadFile extends Component{
         return(
             <>
             <div id='hide' style={{maxWidth: '100%', border: "1px dashed rgb(148, 198, 241)", padding: 20, borderRadius:15, margin:'0 auto' }} >
-                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4}}>
+                <div style={{ display: 'flex', justifyContent: 'space-between'}}>
                     <input type='file' name='file' id='fileInput' onChange={this.handleSelectedFile} multiple={this.props.multiple && 'multiple'} />
                     <label className='input-text' style={{fontSize: 15
                                                     }} htmlFor="fileInput">
@@ -110,7 +110,7 @@ class UploadFile extends Component{
 
                     <UploadBtn pauseUpload={this.state.pauseUpload} onClick={!this.state.pauseUpload ? this.handleClick : this.handlePause} />      
                 </div>
-                <ProgressBar percent={Math.round(this.state.loaded, 2)} />
+                {!this.props.noProgressBar && <ProgressBar percent={Math.round(this.state.loaded, 2)} />}
             </div>
             </>
         );
