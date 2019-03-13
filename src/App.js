@@ -23,7 +23,7 @@ class App extends Component {
                 onComplete={()=> console.log('onComplete called')}
                 onResume={()=> console.log('onResume called')}
                 onCancel={()=> console.log('onCancel called')}
-                noProgressBar
+                // noProgressBar
                 multiple
             />
             

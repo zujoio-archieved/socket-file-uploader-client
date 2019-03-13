@@ -37,7 +37,7 @@ const mockFunction = jest.fn();
         uploadButton = component.find('.upload-btn');
         cancelButton = component.find('.cancel-btn');
   })
-  afterEach(()=> component.unmount())
+  // afterEach(()=> component.unmount())
 
   it('Should Pause the Upload', (done) => {
     uploadButton.simulate('click').simulate('click');
